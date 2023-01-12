@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+@keyframes slideInLeft {
+    from {
+        transform: translateY(-700px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+            body {
+                background-color: mediumpurple;
+            }
+            
+
+            .topnav {
+    display: inline-block;
+    font-weight: 200;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: #bb96dc;
+  margin-top: 0px;
+  margin-left: 70px;
+  overflow: hidden;
+  
+}
+.topnav a {
+margin: 5px;
+  float: left;
+  color: #1b1145;
+  text-align: center;
+  padding: 10px 45px;
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.topnav a:hover {
+  background-color:#484070;
+  color: #bb96dc;
+  border-radius: 5px;
+  transition: cubic-bezier(0.23, 1, 0.320, 1);
+  transition-duration: 1s;
+  transform-style: preserve-3d;
+}
+
+
+.topnav a.active {
+  background-color: #484070;
+  color: #bb96dc;
+  border-radius: 5px;
+}
+                
+            .h1fb2 {
+                font-family: "Times New Roman", Times, serif;
+                color: #baaaf3;
+                line-height: 20px;
+                font-size: 50px;
+                margin-top: 50px;
+                margin-left: 40%;
+                animation: slideInLeft 1s ease-in 0s 1 normal both;
+            }
+            .p1fb {
+font-family: 'Times New Roman', Times, serif;
+font-size: 23px;
+font-weight: 300;
+              text-align: start;
+                color: #f2f2f2;
+                margin-top: 20px;
+           margin-left: 50px;
+           margin-right: 50px;
+           padding: 20px;
+ }
+ .h1fb {
+  font-weight: 900;
+    text-align: left;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: #bb96dc;
+                line-height: 20px;
+                font-size: 24px;
+                margin-top: 5px;
+                padding-left: 10px;
+                padding-right: 20px;
+                animation: slideInLeft 1s ease-in 0s 1 normal both;
+
+
+ }
+ .mamaimg {
+    padding-right: 100px;
+  padding-top: 130px;
+  margin-left: 850px;
+  margin-right: 30px;
+  margin-top: 30px;
+    height: 350px;
+    width: 250px;
+    object-fit: contain;
+    position: absolute;
+ }
+
+ .papaimg {
+    padding-right: 100px;
+  padding-top: 500px;
+  margin-left: 850px;
+  margin-right: 30px;
+  margin-top: 30px;
+    height: 350px;
+    width: 250px;
+    object-fit: contain;
+    position: absolute;
+ }
+ 
+ .div1 {
+    border-radius: 15px;
+                backdrop-filter: blur(2px);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 540px;
+  height: 340px;
+  border: 1px solid #2b096e;
+  padding-left: 3px;
+  padding-top: 10px;
+  margin-left: 60px;
+  margin-right: 70px;
+  margin-top: 0px;
+  float: right;
+ }
+
+ .div2 {
+  margin-left: 60%;
+    border-radius: 15px;
+                backdrop-filter: blur(2px);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 540px;
+  height: 250px;
+  border: 1px solid #2b096e;
+  padding-left: 3px;
+  padding-top: 10px;
+  margin-left: 40px;
+  margin-right: 70px;
+  margin-top: 45px;
+  float: right;
+ }
+
+ @media (min-aspect-ratio: 16/9){
+    .backvideo {
+        width: 100%;
+        height: auto;
+
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .backvideo {
+        width: auto;
+        height: 100%;
+        
+    }
+}
+.backvideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+.button {
+    
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #c58aec00;
+  border: 1px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
+   width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 300px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.imgmovie {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  margin-left: 20px;
+  margin-top: 10px;
+  
+}
+.imgplaying {
+  position: absolute;
+  width: 500px;
+  height: 230px;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+
+
+
+
+        </style>
+
+</head>
+<body>
+    <video autoplay loop muted plays-inline class="backvideo">
+        <source src="bgvid.mp4" type="video/mp4">
+    </video>
+<li class="topnav">
+<a href="Website final.html">Introduction</a>
+<a href="familybg.html">Family Background</a>
+<a class="active" href="Hobbies.html">Hobbies</a>
+<a href="skillsntalet.html">Skills/Talents</a>
+<a href="strengthsandweaknesses.html">Strength and Weaknesses/ Career</a>
+</li>
+<h1 class="h1fb2"> Hobbies </h1>
+<br>
+
+<div style="width: 100%;">
+  <div class="div1"> 
+      <img class="imgmovie" src="movies.jpg">
+  </div>
+  <p1 class="h1fb">My favorite hobbies are watching movies and playing online games</p1> 
+  <br> <br>
+  <p1 class="p1fb">
+    
+I like watching interesting movies and series on Netflix when I have free time or when I feel like I'm on the verge of breaking down. 
+<br> <br>
+ I am currently watching Alice in Borderland Season 2, and the most fun and memorable series I watched was The Big Bang Theory and Lucifer.
+  <br> <br> I like playing online games like Call of Duty Mobile, Genshin Impact, Mobile Legends and Roblox but I usually play APEX Mobile nowadays.
+  </p1>
+  <div class="div2"> 
+      <img class="imgplaying" src="playing.jpg">
+  </div>
+</div>

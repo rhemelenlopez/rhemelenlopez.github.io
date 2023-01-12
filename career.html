@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+@keyframes slideInLeft {
+    from {
+        transform: translateY(-700px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+            body {
+                background-color: mediumpurple;
+            }
+            
+
+            .topnav {
+    display: inline-block;
+    font-weight: 200;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: #bb96dc;
+  margin-top: 0px;
+  margin-left: 70px;
+  overflow: hidden;
+  
+}
+.topnav a {
+margin: 5px;
+  float: left;
+  color: #1b1145;
+  text-align: center;
+  padding: 10px 45px;
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.topnav a:hover {
+  background-color:#484070;
+  color: #bb96dc;
+  border-radius: 5px;
+  transition: cubic-bezier(0.23, 1, 0.320, 1);
+  transition-duration: 1s;
+  transform-style: preserve-3d;
+}
+
+
+.topnav a.active {
+  background-color: #484070;
+  color: #bb96dc;
+  border-radius: 5px;
+}
+                
+            .h1fb2 {
+                margin: 0;
+                font-family: "Times New Roman", Times, serif;
+                color: #baaaf3;
+                line-height: 50px;
+                font-size: 50px;
+                margin-top: 10px;
+                animation: slideInLeft 1s ease-in 0s 1 normal both;
+            }
+            .p1fb {
+              padding-left: 10px;
+              padding-right: 20px;
+              font-size: 23px;
+                color: #f2f2f2;
+                margin-top: 20px;
+            margin-left: 20px;
+ }
+ .h1fb {
+    font-family: "Times New Roman", Times, serif;
+                color: #baaaf3;
+                line-height: 0px;
+                font-size: 50px;
+                margin-left: -500px;
+                margin-top: 10px;
+                animation: slideInLeft 1s ease-in 0s 1 normal both;
+
+
+ }
+ 
+ .div1 {
+    width: 550px;
+     height: 550px; 
+     float: left; 
+
+    border-radius: 15px;
+                backdrop-filter: blur(2px);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  border: 1px solid #2b096e;
+  padding-left: 5px;
+  padding-top: 10px;
+  margin-left: 20px;
+  margin-right: 50px;
+  margin-top: 100px;
+ }
+
+ .div2 {
+    float: right;
+    margin-left: 15px;
+     height: 530px; 
+     width: 550px;
+    border-radius: 15px;
+                backdrop-filter: blur(2px);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  border: 1px solid #2b096e;
+  padding-left: 3px;
+  padding-top: 30px;
+  margin-right: 50px;
+  margin-top: 100px;
+ }
+
+ @media (min-aspect-ratio: 16/9){
+    .backvideo {
+        width: 100%;
+        height: auto;
+
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .backvideo {
+        width: auto;
+        height: 100%;
+        
+    }
+}
+.backvideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+.button {
+    font-family: 'Times New Roman', Times, serif;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #c58aec00;
+  border: none;
+  color: #d5b2ec;
+  text-align: center;
+  font-size: 26px;
+  padding: 20px;
+   width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 300px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+        </style>
+
+</head>
+<body>
+    <video autoplay loop muted plays-inline class="backvideo">
+        <source src="bgvid.mp4" type="video/mp4">
+    </video>
+<li class="topnav">
+<a href="Website final.html">Introduction</a>
+<a  href="familybg.html">Family Background</a>
+<a href="Hobbies.html">Hobbies</a>
+<a href="skillsntalet.html">Skills/Talents</a>
+<a class="active" href="career.html">Strength and Weaknesses/ Career</a>
+</li>
+<div style="width: 100%;">
+    <div class="div1"> 
+        <h1 class="h1fb2" style="text-align: center;">Strengths and Weaknesses</h1>
+        <p class="p1fb"> Our Strengths and Weaknesses are the things we always think about when we are choosing what career or job we want to have in the future.
+          <br><br> But for me, my weaknesses is what I think about so I can improve them and easily get a job in the future. One of my weaknesses is coding and this project
+          shows my knowledge in coding. <br> <br>  The past days Ive been working on this website, I realized that my strengths in terms of IT field 
+          is designing a website but I can't create what's on my mind because my weakness is coding.
+        </p>
+    </div>
+    <div class="div2"> 
+        <h1 class="h1fb" style="margin: 10px 10px; text-align: center; line-height: 40px;">Career</h1> <br>
+        <p class="p1fb">I don't consider what I want to do as a career or job since what I intend to do after graduating from college is to apply at the company where my uncle is working as an apprentice so he can train and guide me.
+          <br> <br>
+          I plan to save enough money to return to college and study nursing to become what I want to, a licensed nurse.</p>
+    </div>
+</div>
+
+

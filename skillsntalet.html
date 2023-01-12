@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+@keyframes slideInLeft {
+    from {
+        transform: translateY(-700px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+            body {
+                background-color: mediumpurple;
+            }
+            
+
+            .topnav {
+    display: inline-block;
+    font-weight: 200;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: #bb96dc;
+  margin-top: 0px;
+  margin-left: 70px;
+  overflow: hidden;
+  
+}
+.topnav a {
+margin: 5px;
+  float: left;
+  color: #1b1145;
+  text-align: center;
+  padding: 10px 45px;
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.topnav a:hover {
+  background-color:#484070;
+  color: #bb96dc;
+  border-radius: 5px;
+  transition: cubic-bezier(0.23, 1, 0.320, 1);
+  transition-duration: 1s;
+  transform-style: preserve-3d;
+}
+
+
+.topnav a.active {
+  background-color: #484070;
+  color: #bb96dc;
+  border-radius: 5px;
+}
+                
+            .h1fb2 {
+                text-align: center;
+                font-family: "Times New Roman", Times, serif;
+                color: #baaaf3;
+                line-height: 20px;
+                font-size: 50px;
+                margin-top: 50px;
+                animation: slideInLeft 1s ease-in 0s 1 normal both;
+            }
+            .p1fb {
+font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+font-weight: 300;
+              text-align: center;
+                color: #f2f2f2;
+                margin-top: 20px;
+            margin-left: 50px;
+            margin-right: 50px;
+ }
+ .h1fb {
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: #bb96dc;
+                line-height: 10px;
+                font-size: 36px;
+                margin-top: 10px;
+                padding-left: 10px;
+
+
+ }
+ 
+ .div1 {
+    border-radius: 15px;
+                backdrop-filter: blur(2px);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 600px;
+  height: 350px;
+  border: 1px solid #2b096e;
+  padding-left: 3px;
+  padding-top: 40px;
+  margin-left: 60px;
+  margin-right: 90px;
+  margin-top: 40px;
+  float: left;
+ }
+
+ @media (min-aspect-ratio: 16/9){
+    .backvideo {
+        width: 100%;
+        height: auto;
+
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .backvideo {
+        width: auto;
+        height: 100%;
+        
+    }
+}
+.backvideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+.button {
+    
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #c58aec00;
+  border: 1px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
+   width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 300px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+video {
+  position: absolute;
+  width: 600px;
+  height: 300px;
+   
+    z-index: -1;
+  
+}
+.div1drawing {
+    border-radius: 15px;
+                backdrop-filter: blur(2px);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 440px;
+  height: 345px;
+  border: 1px solid #2b096e;
+  padding-left: 3px;
+  padding-top: 30px;
+  margin-left: -50px;
+  margin-right: -50px;
+  margin-top: 45px;
+  float: left;
+ }
+ .imgdrawing1 {
+  position: absolute;
+  width: 400px;
+  height: 330px;
+  margin-left: 15px;
+  margin-top: 0px;
+}
+
+
+        </style>
+
+</head>
+<body>
+    <video autoplay loop muted plays-inline class="backvideo">
+        <source src="bgvid.mp4" type="video/mp4">
+    </video>
+<li class="topnav">
+<a href="Website final.html">Introduction</a>
+<a href="familybg.html">Family Background</a>
+<a  href="Hobbies.html">Hobbies</a>
+<a class="active" href="skillsntalet.html">Skills/Talents</a>
+<a href="career.html">Strength and Weaknesses/ Career</a>
+</li>
+<h1 class="h1fb2"> Skills/Talent </h1>
+<h2 class="h1fb">Painting/Drawing</h2> <br>
+ <p class="p1fb">I like painting scenes and galaxies. I also know how to draw anime characters that I have watched.
+  </p>
+<Div class="div1">
+    <video autoplay loop muted plays-inline>
+<source src="paintingvideoedited.mp4">
+    </video>
+</Div>
+<div class="div1drawing">
+  <img class="imgdrawing1" src="drawing1.jpg">
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p class="p1fb">
+  The video I'm showing here is of me doing a 10-minute water color painting, and I'm using a make-up brush because I lost my painting brushes and the unfinished drawing is Clara Valac of Demon School. </p>
+  <br> <br>
+
+
+
+
+
+
+ </button></a>
